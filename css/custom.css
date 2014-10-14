@@ -1,0 +1,279 @@
+html,
+button,
+input,
+select,
+textarea {
+    color: #45566F;
+}
+
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+section.full-width {
+	width:100%;
+	//max-width: 1200px;
+	margin: 0 auto;
+    background: #C2C7CF;
+}
+section.full-width.dark {background: #4070B7;padding: 2em 0;}
+
+header,
+.intro,
+.postscript,
+footer {
+    width:90%;
+    max-width: 760px;
+    margin: 0 auto;
+	padding: 1em 0;
+	display: block;
+	overflow: hidden;
+}
+
+.page {
+    width:90%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+#logo {
+	width: 200px;
+	float: left;
+	border: 1px dotted lightgrey;
+	padding: 1em 0;
+	text-transform: uppercase;
+	color: lightgrey;
+	text-align: center;
+	font-size: 48px;
+}
+
+nav {
+	float: right;
+	width: 70%;
+}
+nav ul.menu {
+	list-style: none;
+	padding: 0;
+	text-align: right;
+	margin: 0;
+}
+nav ul.menu  > li {
+	display: inline-block;
+	margin: 0 0 0 1em;
+	border: 1px solid lightgrey;
+	padding: 1em;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+nav ul.menu  > li > a{
+	text-decoration: none;
+	color: #8395AF;
+}
+
+.page section.badges {
+	display: block;
+	padding: 1em 0 ;
+	//margin: 1em 0;
+	clear: both;
+	overflow: hidden;
+	//border-top: 1px dotted #8395AF;
+	//border-bottom: 1px dotted lightgrey;
+}
+
+.page section.badges.display {
+	margin-top: -50px;
+}
+
+.page section.badges article.item {
+	text-align: center;
+	cursor: pointer;
+}
+
+.page section.badges.display article.item  {
+	padding: 0 1em
+}
+
+.page section.badges img {
+	width: 100%;
+}
+
+
+.page section.badges .price {
+	font: 700 60px/72px sans-serif;
+	color: #8395AF;
+}
+
+.intro {
+    background: #C2C7CF;
+    border-top: 1px dotted #45566F;
+}
+.intro p {
+    margin-top: 0;
+}
+.intro,
+.postscript {
+	font: 700 24px/36px sans-serif;
+}
+
+.postscript {
+	color: white;
+	clear: both;
+	padding: 0 1em;
+	//margin: 1em 0;
+	//border: 1px solid #ccc;
+}
+
+.postscript a:link,
+.postscript a:visited{
+	background-color: white;
+	color: #4070b7;
+	padding: 1px 4px;
+	text-decoration: none;
+    border-radius: 4px;
+}
+.postscript a:hover {
+	opacity: 0.5;
+}
+.postscript.active {
+    border-radius: 10px;
+    background: #45566f;
+}
+.second-choiceDetails,
+.third-choiceDetails {
+	display: none;
+}
+
+
+
+
+
+
+
+
+section.badges article.item {
+	width: 33%;
+	float: left;
+}
+
+section.badges article.item > div {
+    margin: 1em 1em 2em;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1em 1em 2em;
+    text-align: center;
+}
+
+section.badges article.item.active > div {
+    border: 1px solid #4070B7;
+}
+
+article > p,
+article > ul {
+	text-align: left;
+}
+
+
+article > ul {
+	list-style: none;
+	padding: 0;
+	margin: 1em 0 0;
+	color: grey;
+	list-style-position: outside;
+}
+
+ul.benefits {
+    text-align: left;
+}
+article > ul a {
+	color: grey;
+	text-decoration: none;
+}
+
+article > ul > li {
+	font: 400 24px/36px sans-serif;
+	margin-bottom: 1em;
+}
+
+article > ul.benefits > li {
+	background:url(../img/icon-check.png) no-repeat 0 0;
+	padding: 0 0 0.5em 2em;
+}
+
+article > ul.checklist > li {
+	background:url(../img/icon-check.png) no-repeat 0 0;
+	padding: 0 0 0.5em 2em;
+}
+
+article > ul.filelist > li {
+	background:url(../img/icon-pdf.png) no-repeat 0 0;
+	padding: 0 0 0.5em 2em;
+	border-bottom: 1px dotted lightgrey;
+}
+article > ul.filelist > li:last-chld {
+	border-bottom: 0 none;
+}
+
+article > ul.filelist > li > span {
+	margin: 0 0 0 0.5em;
+	font-size: 14px;
+	line-height: 36px;
+	color: lightgrey;
+}
+
+button {
+	background: #8395af;
+	padding: 0.5em 1em;
+	text-transform: uppercase;
+	border: 0 none;
+	border-radius: 10px;
+	font-size: 24px;
+}
+
+.active button {
+background: #45566F;
+-webkit-box-shadow: 0px 0px 15px 5px rgba(64, 112, 183, .75);
+-moz-box-shadow: 0px 0px 15px 5px rgba(64, 112, 183, .75);
+box-shadow: 0px 0px 15px 5px rgba(64, 112, 183, .75);
+}
+
+button > a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+figure {
+	margin: 0 0 1em;
+}
+
+
+.socialmedia {
+	list-style: none;
+	padding: 0;
+	text-align: right;
+	margin: 0 2em 1em 0;
+}
+.socialmedia  > li {
+	display: inline-block;
+	margin: 0 0 0 1em;
+	width: 32px;
+	height: 32px;
+	line-height: 32px;
+	border: 1px solid lightgrey;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.socialmedia  > li > a{
+	text-decoration: none;
+	color: #8395AF;
+}
+
